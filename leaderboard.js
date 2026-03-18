@@ -25,9 +25,7 @@ async function fetchLeaderboard() {
 
     //Display Data
     if (listDiv && data) {
-        listDiv.innerHTML = data
-            .map(user => `<p><strong>${user.username}</strong>: ${user.score}</p>`)
-            .join(''); //Joins the array into a clean string of HTML
+        listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}</p>`).join(''); //Joins the array into a clean string of HTML
     }
 }
 
@@ -66,4 +64,4 @@ else {
   }
 fetchLeaderboard();
 });
-
+fetchLeaderboard
