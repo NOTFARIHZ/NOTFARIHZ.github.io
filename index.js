@@ -5,7 +5,7 @@
 //'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ5aG1yemxieXd6aXBwc3JpbGZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM3MjkxNjYsImV4cCI6MjA4OTMwNTE2Nn0.IU3_m1xjzh3UM2A6CvhrSxcNL65QKpW2YQVebxhBbQo')
 
 //wait
-document.addEventListener('DOMContentLoaded', async () => {
+//document.addEventListener('DOMContentLoaded', async () => {
 
 //Ask supabase for  name
 //const { data, error } = await supabase 
@@ -43,6 +43,6 @@ setInterval(() => {
 //update the number
   timerElement.innerText = seconds;
 }, 1000);
-});
+//});
 
 //I'm bad at describing ><
