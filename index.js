@@ -30,13 +30,13 @@ const listDiv =  document.getElementById('list');
   listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}s</p>`).join(''); 
   }
 
-console.log("1");
+alert("1");
 //counter
 let seconds = 0;
-console.log(2);
+alert(2);
 //to connect
 const timerElement = document.getElementById('timer');
-consooe.log(3);
+alert(3);
 //timer, it moves every second (1000ms)
 setInterval(() => {
   seconds++;
