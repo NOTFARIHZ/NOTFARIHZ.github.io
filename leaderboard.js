@@ -31,5 +31,40 @@ async function fetchLeaderboard() {
     }
 }
 
-// Run the function as soon as the file loads
+//Run the function as soon as the file loads
 fetchLeaderboard();
+
+//Get the input from html
+const saveBtn = document.getElementById('save_btn');
+const nameInput = document.getElementById('name_input');
+
+//tell what to do when clicked
+saveBtn.addEventListener('click', async () => {
+//get what's typed
+  const username = nameInput.value
+//get current timer number
+  const finalScore = window.seconds;
+
+  if (!username) {
+  alert("write something >< first");
+  return;
+}
+
+alert(`Saving ${username}'s score of ${finalScore}...`);
+
+//send it to supabase (the database platform im using)
+const { error } = await supabase
+  .from('leaderboard')
+  .insert([{ username: username, score: finalScore }]);
+
+if (error) { 
+  console.error("Save failed:", error.message);
+}
+else {
+ alert  ("Your score is saved! ^^ Refresh to see");
+
+//refresh the page for new score
+  location.reload();
+  }
+});
+

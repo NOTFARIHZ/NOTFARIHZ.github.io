@@ -2,7 +2,7 @@
 
 
 //counter
-let seconds = 0;
+window.seconds = 0;
 //to connect
 const timerElement = document.getElementById('timer');
 alert("installing not_virus.exe");
