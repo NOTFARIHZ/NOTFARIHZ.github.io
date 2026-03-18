@@ -31,8 +31,6 @@ async function fetchLeaderboard() {
     }
 }
 
-//Run the function as soon as the file loads
-fetchLeaderboard();
 
 //Get the input from html
 const saveBtn = document.getElementById('save_btn');
@@ -66,5 +64,6 @@ else {
 //refresh the page for new score
   location.reload();
   }
+fetchLeaderboard();
 });
 
