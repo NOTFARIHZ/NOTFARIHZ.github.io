@@ -1,4 +1,4 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+//import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 //connecting to cloud
 //const supabase = createClient('https://byhmrzlbywzippsrilfl.supabase.co', 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 //  
 //Wrap name in <p> tag
 //  listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}s</p>`).join(''); 
-  }
+//  }
 
 alert("1");
 //counter
