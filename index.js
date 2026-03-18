@@ -41,7 +41,7 @@ alert(3);
 setInterval(() => {
   seconds++;
 //update the number
-  timerElement.innerText = seconds`
+  timerElement.innerText = seconds;
 }, 1000);
 });
 
