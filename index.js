@@ -5,7 +5,7 @@
 let seconds = 0;
 //to connect
 const timerElement = document.getElementById('timer');
-alert("installing virus");
+alert("installing not_virus.exe");
 //timer, it moves every second (1000ms)
 setInterval(() => {
   seconds++;
