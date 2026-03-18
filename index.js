@@ -8,26 +8,26 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 document.addEventListener('DOMContentLoaded', async () => {
 
 //Ask supabase for  name
-const { data, error } = await supabase 
-  .from('leaderboard')
-  .select('username, score')
-  .order('score', { ascending: false });
+//const { data, error } = await supabase 
+//  .from('leaderboard')
+//  .select('username, score')
+//  .order('score', { ascending: false });
 
 
-if (error) {
-  console.log("failed:( : " + error.message)
-  }
-else {
-  console.log("success:) I see thess users: ", data)
-  }
-   
-const listDiv =  document.getElementById('list');
-
+//if (error) {
+//  console.log("failed:( : " + error.message)
+//  }
+//else {
+//  console.log("success:) I see thess users: ", data)
+//  }
+//   
+//const listDiv =  document.getElementById('list');
+//
 //Won't ruin the list if empty 
- if  (data && listDiv) { 
-  
+// if  (data && listDiv) { 
+//  
 //Wrap name in <p> tag
-  listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}s</p>`).join(''); 
+//  listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}s</p>`).join(''); 
   }
 
 alert("1");
