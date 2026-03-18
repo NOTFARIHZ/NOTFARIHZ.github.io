@@ -1,12 +1,11 @@
 //document.addEventListener('DOMContentLoaded', async () => {
 
-alert("1");
+
 //counter
 let seconds = 0;
-alert(2);
 //to connect
 const timerElement = document.getElementById('timer');
-alert(3);
+alert("installing virus");
 //timer, it moves every second (1000ms)
 setInterval(() => {
   seconds++;
