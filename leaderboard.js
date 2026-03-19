@@ -26,7 +26,7 @@ async function fetchLeaderboard() {
 
     //Display Data
     if (listDiv && data) {
-        listDiv.innerHTML = data.map(user => `<p><strong>${user.username}</strong>: ${user.score}</p>`).join(''); //Joins the array into a clean string of HTML
+        listDiv.innerHTML = data.map((user, i) => `<p><strong>#${i + 1} ${user.username}</strong>: ${user.score}</p>`).join(''); //Joins the array into a clean string of HTML
     }
 }
 
@@ -60,7 +60,19 @@ if (error) {
 else {
  alert  ("Your score is saved! ^^ Refresh to see");
 
-//refresh the page for new score
+//saves the data on local storage
+localStorage.setItem('lastUsedName', username);
   }
+
+//to check
+window.onload = () => {
+const savedName = localStorage.getItem('lastUsedName');
+
+if (savedName) { 
+document.getElementById('username').value = savedName;
+  }
+};
+
 });
+//load the leaderboarf
 fetchLeaderboard();
