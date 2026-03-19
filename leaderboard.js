@@ -1,3 +1,4 @@
+alert("the thing is working");
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 
 //Initialize the Supabase
@@ -32,7 +33,7 @@ async function fetchLeaderboard() {
 
 //Get the input from html
 const saveBtn = document.getElementById('save_btn');
-const nameInput = document.getElementById('name_input');
+const nameInput = document.getElementById('username');
 
 //tell what to do when clicked
 saveBtn.addEventListener('click', async () => {
@@ -60,8 +61,6 @@ else {
  alert  ("Your score is saved! ^^ Refresh to see");
 
 //refresh the page for new score
-  location.reload();
   }
-fetchLeaderboard();
 });
-fetchLeaderboard
+fetchLeaderboard();
